@@ -1,0 +1,34 @@
+{
+    "types":[
+        {
+            "name":"disability",
+            "bigname":"Disability homes",
+            "num":8
+        },
+        {
+            "name":"diseased",
+            "bigname":"Diseased homes",
+            "num":8
+        },
+        {
+            "name":"schools",
+            "bigname":"Govt school",
+            "num":8
+        },
+        {
+            "name":"orphan",
+            "bigname":"Orphan",
+            "num":8
+        },
+        {
+            "name":"slums",
+            "bigname":"Slums",
+            "num":8
+        },
+        {
+            "name":"streets",
+            "bigname":"Street",
+            "num":8
+        }
+    ]
+}

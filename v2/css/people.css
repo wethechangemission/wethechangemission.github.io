@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Ruda";
+    src: url(../fonts/Ruda-Regular.ttf);
+}
+body{
+    font-family:Ruda;
+}
+/*.center-block {float: none !important}*/
+.section-header>h2{
+    text-align: center;
+}
+.header-line{
+    height: 4px;
+    background-color: #496e9a;
+    margin-bottom: 50px;
+}
+
+/*Each person*/
+.person-desc{
+    background-color: #496e9a;
+    padding: 0;
+}
+.person-img{
+    width:100%;
+    height: auto;
+}
+.person-right{
+    color: #fff;
+    height: 100%;
+}
+.person-right>h6{
+    opacity: 0.8;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 50%;/*height of header*/
+        padding: 0;
+    }
+}

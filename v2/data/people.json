@@ -1,0 +1,115 @@
+{
+    "types":[
+        {
+            "name":"Managerial Team",
+            "people":[
+                {
+                    "name":"Akarsh Varma",
+                    "role":"Founder and Head",
+                    "imgUrl":"akarsh.jpg"
+                }
+            ]
+        },
+        {
+            "name":"Event Advisory Team",
+            "people":[
+                {
+                    "name":"Siva Teja",
+                    "role":"Chief Advisor",
+                    "imgUrl":"sivateja.jpg"
+                },
+                {
+                    "name":"Paul Rohit",
+                    "role":"Advisor",
+                    "imgUrl":"rohit.jpg"
+                },
+                {
+                    "name":"Soujanya",
+                    "role":"Advisor",
+                    "imgUrl":"sowjanya.jpg"
+                },
+                {
+                    "name":"Swapnika",
+                    "role":"Advisor",
+                    "imgUrl":"swapnika.jpg"
+                }
+            ]
+        },
+        {
+            "name":"Web operations Team ",
+            "people":[
+                {
+                    "name":"Prashant Maurice",
+                    "role":"Team Lead",
+                    "imgUrl":"maurice.jpg"
+                },
+                {
+                    "name":"Ravikanth",
+                    "role":"Developer",
+                    "imgUrl":"ravi-kanth.jpg"
+                }
+            ]
+        },
+        {
+            "name":"Content Development Team",
+            "people":[
+                {
+                    "name":"Bhanu Kishore",
+                    "role":"Team Lead",
+                    "imgUrl":"bhanu.jpg"
+                },
+                {
+                    "name":"Bharath Reddy",
+                    "role":"Content Developer",
+                    "imgUrl":"bharath.jpg"
+                },
+                {
+                    "name":"Botcha Bhaskar",
+                    "role":"Content Developer",
+                    "imgUrl":"bhaskar.jpg"
+                },
+                {
+                    "name":"Moorthy",
+                    "role":"Content Developer",
+                    "imgUrl":"moorthy.jpg"
+                }
+            ]
+        },
+        {
+            "name":"Communication Team",
+            "people":[
+                {
+                    "name":"Ramana",
+                    "role":"Communication facilitator",
+                    "imgUrl":"Ramana.jpg"
+                }
+            ]
+        },
+        {
+            "name":"Design Team",
+            "people":[
+                {
+                    "name":"Prudhvi Raj",
+                    "role":"Lead Designer",
+                    "imgUrl":"prudhvi.jpg"
+                },
+                {
+                    "name":"Janeef Mayari",
+                    "role":"Designer",
+                    "imgUrl":"janeef.jpg"
+                },
+                {
+                    "name":"Gaurav Biwolkar",
+                    "role":"Art Designer",
+                    "imgUrl":"gaurav.jpg"
+                },
+                {
+                    "name":"Rohit Tomar",
+                    "role":"Designer",
+                    "imgUrl":"rohit_tomar.jpg"
+                }
+            ]
+        }
+
+    ]
+}
