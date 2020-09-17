@@ -51,7 +51,249 @@
 <!--    <div id="mainContentContainer">-->
 
         <!-- Main Page Section -->
-        <?php  include('views/people.php')?>
+        <header class="intro-menu">
+            <div id="main_top_menu" class="topMenu-notfixed">
+                <a class="topMenu_btn" href="./index.html"><div id="aboutusbutton" class="nobutton">Home</div></a>
+                <a class="topMenu_btn" href="../index.html"><div id="aboutusbutton" class="nobutton">Concept</div></a>
+            </div>
+        </header>
+        
+        <?php
+        $data = file_get_contents('../v2/data/people.json');
+        $jsonData = json_decode($data,true);
+        $types = $jsonData['types'];
+        $count = count($types);
+        ?>
+        
+        <div id="mainContentContainer">
+            <div style="width: 100%; background-color: #fff; border-top: #26527d solid 10px">
+                <div class="container" style="margin-top: 50px;">
+                    <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                        <div class="row section-header"><h2>Managerial Team</h2></div>
+                        <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/akarsh.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Akarsh Varma</h3>
+                                        <h6>Founder and Head</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="display:flex">
+                        </div>
+                    </div>
+                    <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                        <div class="row section-header"><h2>Event Advisory Team</h2></div>
+                        <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/sivateja.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Siva Teja</h3>
+                                        <h6>Advisor</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/rohit.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Paul Rohit</h3>
+                                        <h6>Advisor</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/sowjanya.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Soujanya</h3>
+                                        <h6>Advisor</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/swapnika.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Swapnika</h3>
+                                        <h6>Advisor</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                        <div class="row section-header"><h2>Web operations Team</h2></div>
+                        <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/maurice.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Prashant Maurice</h3>
+                                        <h6>Team Lead</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/ravi-kanth.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Ravikanth</h3>
+                                        <h6>Developer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                        <div class="row section-header"><h2>Content Development Team</h2></div>
+                        <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/bhanu.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Bhanu Kishore</h3>
+                                        <h6>Team Lead</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/bharath.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Bharath Reddy</h3>
+                                        <h6>Content Developer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/bhaskar.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Botcha Bhaskar</h3>
+                                        <h6>Content Developer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/moorthy.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Moorthy</h3>
+                                        <h6>Content Developer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                            <div class="row section-header"><h2>Communication Team</h2></div>
+                            <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                            <div class="row" style="display:flex">
+                                <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                    <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                        <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                            <img src="../v2/img/people/Ramana.jpg" alt="" class="person-img"/>
+                                        </div>
+                                        <div class="col-md-6 person-right">
+                                            <h3>Ramana</h3>
+                                            <h6>Communication facilitator</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container container-fluid" style="padding-left: 5%; padding-right: 5%; margin-top: 40px">
+                        <div class="row section-header"><h2>Design Team</h2></div>
+                        <div class="row"><div class="col-sm-2 col-sm-offset-5 header-line" ></div></div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/prudhvi.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Prudhvi Raj</h3>
+                                        <h6>Lead Designer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/janeef.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Janeef Mayari</h3>
+                                        <h6>Designer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="display:flex">
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/gaurav.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Gaurav Biwolkar</h3>
+                                        <h6>Art Designer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 center-block col-centered" style="padding: 0px; ">
+                                <div class="person-desc row"  style="margin: 1px; padding: 0">
+                                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px">
+                                        <img src="../v2/img/people/rohit_tomar.jpg" alt="" class="person-img"/>
+                                    </div>
+                                    <div class="col-md-6 person-right">
+                                        <h3>Rohit Tomar</h3>
+                                        <h6>Designer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <!--    </div>-->
 

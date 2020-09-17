@@ -52,7 +52,7 @@
             <a class="topMenu_btn page-scroll" href="#main_gallery_cont"><div id="gallerybutton" class=" nobutton">Gallery</div></a>
             <a class="topMenu_btn page-scroll" href="#main_impact_cont"><div id="impactbutton" class="nobutton">Create Impact</div></a>
             <a class="topMenu_btn page-scroll" href="#main_connect_cont"><div id="connectbutton" class="nobutton">Connect</div></a>
-            <a class="topMenu_btn" href="./people.php"><div id="aboutusbutton" class="nobutton">Team</div></a>
+            <a class="topMenu_btn" href="./people.html"><div id="aboutusbutton" class="nobutton">Team</div></a>
             <a class="topMenu_btn" href="../index.html"><div id="aboutusbutton" class="nobutton">Concept</div></a>
         </div>
     </header>
@@ -97,36 +97,309 @@
                     $count = count($types);
                     ?>
                     <ul class="gallery_filter" style='list-style: none;padding:0; padding-bottom:30px;'>
-                        <?php
-                        for ($m=0; $m<$count; $m++) {
-                            $temp='';
-                            $temp .= '<li class="filter" data-filter=".'.$types[$m]['name'].'">'.$types[$m]['bigname'].'</li>';
-                            echo $temp;
-                        }
-                        ?>
+                        <li class="filter" data-filter=".disability">Disability homes</li>
+                        <li class="filter" data-filter=".diseased">Diseased homes</li>
+                        <li class="filter" data-filter=".schools">Govt school</li>
+                        <li class="filter" data-filter=".orphan">Orphan</li>
+                        <li class="filter" data-filter=".slums">Slums</li>
+                        <li class="filter" data-filter=".streets">Street</li>
                     </ul>
     
                     <div class="col-lg-12" id="gallery_line"></div>
     
                     <ul id="Grid" style="padding:0">
-                        <?php
-                        for ($m=0; $m<$count; $m++) {
-                            $num = $types[$m]['num'];
-                            for ($x=1; $x<=$num; $x++) {
-                                $temp='';
-                                $temp .= '<li class="mix '. $types[$m]['name'].'"  data-big="/'.$types[$m]['name'].'/d'.$x.'.jpg" >' ;
-                                $temp .= '<div style="position:relative; margin:2px"><div class="projects_overlay">';
-                                $temp .= '<div  align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>';
-        //                            $temp .= '<div class="project_name">'.$projects[$x]['projectName'].'</div>';
-        //                            $temp .= '<div class="project_desc">'.$projects[$x]['role'].'</div>';
-                                $temp .= '</div><img  class="media-object img-responsive" src="../v2/gallery/small/'.$types[$m]['name'].'/d'.$x.'.jpg"></div>';
-                                $temp .= '</li>';
-                                echo $temp;
-                            }
-    
-                        }
-    
-                        ?>
+                        <li class="mix disability"  data-big="/disability/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d1.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d2.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d3.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d4.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d5.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d6.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d7.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d8.jpg"></div>
+                        </li>
+                        <li class="mix disability"  data-big="/disability/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/disability/d9.jpg"></div>
+                        </li>
+
+                        <!-- diseased -->
+                        <li class="mix diseased"  data-big="/diseased/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d1.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d2.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d3.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d4.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d5.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d6.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d7.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d8.jpg"></div>
+                        </li>
+                        <li class="mix diseased"  data-big="/diseased/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/diseased/d9.jpg"></div>
+                        </li>
+
+                        <!-- diseased -->
+                        <li class="mix orphan"  data-big="/orphan/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d1.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d2.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d3.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d4.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d5.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d6.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d7.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d8.jpg"></div>
+                        </li>
+                        <li class="mix orphan"  data-big="/orphan/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/orphan/d9.jpg"></div>
+                        </li>
+
+                        <!-- schools -->
+                        <li class="mix schools"  data-big="/schools/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d1.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d2.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d3.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d4.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d5.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d6.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d7.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d8.jpg"></div>
+                        </li>
+                        <li class="mix schools"  data-big="/schools/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/schools/d9.jpg"></div>
+                        </li>
+                        
+                        <!-- slums -->
+                        <li class="mix slums"  data-big="/slums/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d1.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d2.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d3.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d4.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d5.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d6.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d7.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d8.jpg"></div>
+                        </li>
+                        <li class="mix slums"  data-big="/slums/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/slums/d9.jpg"></div>
+                        </li>
+
+                        <!-- streets -->
+                        <li class="mix streets"  data-big="/streets/d1.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                                <div class="project_name"></div>
+                                <div class="project_desc"></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d1.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d2.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d2.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d3.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d3.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d4.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d4.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d5.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d5.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d6.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d6.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d7.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d7.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d8.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d8.jpg"></div>
+                        </li>
+                        <li class="mix streets"  data-big="/streets/d9.jpg" >
+                            <div style="position:relative; margin:2px"><div class="projects_overlay">
+                                <div align="center"><div  class="project_expandicon col-md-12" style="float:inherit"></div></div>
+                            </div><img  class="media-object img-responsive" src="../v2/gallery/small/streets/d9.jpg"></div>
+                        </li>
                     </ul>
                 </div>
             </div>
