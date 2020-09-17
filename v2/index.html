@@ -90,12 +90,6 @@
             <h2>IMPACT GALLERY</h2>
             <div class="container-fluid" align="center" style=""><!---testing new gallery-->
                 <div class="row" style="padding-top:30px">
-                    <?php
-                    $data = file_get_contents('gallery.json');
-                    $jsonData = json_decode($data,true);
-                    $types = $jsonData['types'];
-                    $count = count($types);
-                    ?>
                     <ul class="gallery_filter" style='list-style: none;padding:0; padding-bottom:30px;'>
                         <li class="filter" data-filter=".disability">Disability homes</li>
                         <li class="filter" data-filter=".diseased">Diseased homes</li>
